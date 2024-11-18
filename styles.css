@@ -1,0 +1,155 @@
+/* General Reset and Styling */
+body {
+    font-family: Arial, sans-serif;  /* Simple font */
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Light background for clean look */
+    color: #333; /* Dark text for readability */
+}
+
+/* Header Section */
+header {
+    background-color: #b98f65; /* Warm orange for bakery feel */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #b98f65; /* Hover effect with orange */
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+/* About Us Section */
+section#about {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Menu Section */
+section#menu {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+section#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#menu ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Gallery Section */
+section#gallery {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Contact Section */
+section#contact {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #b98f65;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #b98f65;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Responsive Design: Stacking for Mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+
+    .gallery-images {
+        flex-direction: column; /* Stack gallery images vertically */
+    }
+
+    section#contact {
+        width: 90%; /* Make contact form full-width on smaller screens */
+    }
+}
